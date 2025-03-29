@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 # Baca data
-data = pd.read_csv('hour.csv')  # Ganti 'hour.csv' dengan path file Anda
+data = pd.read_csv('data_1.csv')  # Ganti 'hour.csv' dengan path file Anda
 
 # Judul dashboard
 st.title("Dashboard Analisis Data Bike Sharing")
