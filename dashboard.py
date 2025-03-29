@@ -4,7 +4,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 # Membaca data
-data = pd.read_csv('*data_1.csv')  # Pastikan file CSV berada dalam folder yang sama
+data = pd.read_csv('data_1.csv')
 
 # Menampilkan header
 st.title("Dashboard Analisis Data Bike Sharing")
