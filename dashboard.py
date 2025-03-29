@@ -9,6 +9,14 @@ data = pd.read_csv('data_1.csv')  # Ganti 'hour.csv' dengan path file Anda
 # Judul dashboard
 st.title("Dashboard Analisis Data Bike Sharing")
 
+# Tampilkan data
+st.subheader("Data Head")
+st.write(data.head())
+
+# Statistik deskriptif
+st.subheader("Statistik Deskriptif")
+st.write(data.describe())
+
 # --- Pertanyaan Bisnis 1: Pola Penggunaan Sepeda Sepanjang Hari ---
 st.subheader("Pola Sewa per Jam")
 hourly_rentals = data.groupby('hr')['cnt'].mean().reset_index()
