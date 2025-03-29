@@ -10,14 +10,6 @@ data = pd.read_csv('data_1.csv')
 st.title("Dashboard Analisis Data Bike Sharing")
 st.write("Analisis data Bike Sharing untuk memahami pola penggunaan sepeda.")
 
-# Menampilkan data yang dibaca
-st.subheader("Data Head")
-st.write(data.head())
-
-# Menampilkan analisis deskriptif
-st.subheader("Statistik Deskriptif")
-st.write(data.describe())
-
 # Visualisasi Korelasi
 st.subheader("Heatmap Korelasi")
 # Select only numeric columns for calculating the correlation
